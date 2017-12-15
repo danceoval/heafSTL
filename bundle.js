@@ -21910,7 +21910,13 @@
 		function _class() {
 			_classCallCheck(this, _class);
 	
-			return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).call(this));
+			var _this = _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).call(this));
+	
+			_this.state = {
+				names: ['Janiya', 'Josh', 'Ngeubou', 'Bryce', 'Octocat']
+			};
+	
+			return _this;
 		}
 	
 		_createClass(_class, [{
@@ -21933,15 +21939,26 @@
 						{ className: 'clearfix' },
 						_react2.default.createElement(
 							'div',
-							{ className: 'block' },
-							_react2.default.createElement(_stlViewer2.default, {
-								url: 'http://localhost:8080/src/assets/Octocat-v1.stl',
-								width: 400,
-								height: 400,
-								modelColor: '#B92C2C',
-								backgroundColor: '#EAEAEA',
-								rotate: true,
-								orbitControls: true
+							null,
+							this.state.names.map(function (name, i) {
+								return _react2.default.createElement(
+									'div',
+									{ className: 'block', key: i },
+									_react2.default.createElement(
+										'h3',
+										null,
+										name
+									),
+									_react2.default.createElement(_stlViewer2.default, {
+										url: 'http://localhost:8080/src/assets/' + name + '.stl',
+										width: 400,
+										height: 400,
+										modelColor: '#B92C2C',
+										backgroundColor: '#EAEAEA',
+										rotate: true,
+										orbitControls: true
+									})
+								);
 							})
 						)
 					)
