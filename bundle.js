@@ -21913,7 +21913,7 @@
 			var _this = _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).call(this));
 	
 			_this.state = {
-				names: ['Janiya', 'Josh', 'Ngeubou', 'Bryce', 'Octocat']
+				names: ['Janiya', 'Josh', 'Ngeubou', 'Bryce']
 			};
 	
 			return _this;
@@ -21950,7 +21950,7 @@
 										name
 									),
 									_react2.default.createElement(_stlViewer2.default, {
-										url: 'http://localhost:8080/src/assets/' + name + '.stl',
+										url: 'https://localhost:8080/src/assets/' + name + '.stl',
 										width: 400,
 										height: 400,
 										modelColor: '#B92C2C',
