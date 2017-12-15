@@ -28,7 +28,7 @@ export default class extends Component {
 								<div className="block" key={i}>
 									<h3>{name}</h3>
 									<STLViewer
-										url={`https://localhost:8080/src/assets/${name}.stl`}
+										url={`https://glacial-everglades-21948.herokuapp.com/src/assets/${name}.stl`}
 										width={400}
 										height={400}
 										modelColor='#B92C2C'
